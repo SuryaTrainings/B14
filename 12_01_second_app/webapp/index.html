@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- Bootstrap area -->
+        <!-- inline code -->
+        <script
+                id="sap-ui-body"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_fiori_3_dark"
+                data-sap-ui-resourceRoots='{"home": "./"}'
+        ></script>
+
+
+        <!-- Application Area -->
+        <script>
+            var oInp = new sap.m.Input("idInput", {
+                placeholder : "Enter a value"
+            }); 
+
+            var oBtn = new sap.m.Button("idBtn", {
+                text: "Display Input data",
+                press: function(){
+                    var oCore   = sap.ui.getCore();
+                    var oInpRef = oCore.byId("idInput");
+                    var oValue  = oInpRef.getValue();
+
+                    alert(oValue);
+                }
+            });
+
+            oInp.placeAt("idDiv1")
+            oBtn.placeAt("idDiv2");
+
+        </script>        
+    </head>
+    <body id="content" class="sapUiBody">
+        <!-- UI Area - We are not going to write any html code -->
+    <div id="idDiv1"></div>
+    <div id="idDiv2"></div>
+    </body>
+</html>

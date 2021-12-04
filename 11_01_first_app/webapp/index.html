@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!-- Bootstrap area -->
+        <!-- inline code -->
+        <script
+                id="sap-ui-body"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_fiori_3_dark"
+                data-sap-ui-resourceRoots='{"home": "./"}'
+        ></script>
+
+
+        <!-- UI Area -->
+        <script>
+            var oBtn = new sap.m.Button("idBtn", {
+                text: "Smile please" 
+            });
+
+            oBtn.placeAt("content");
+        </script>        
+    </head>
+    <body id="content">
+        <!-- Application Area - We are not going to write any html code -->
+    </body>
+</html>
