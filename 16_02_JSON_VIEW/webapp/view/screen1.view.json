@@ -1,0 +1,10 @@
+{
+"Type":"sap.ui.core.mvc.JSONView",
+"controllerName":"home.controller.screen1",
+"content": [{
+    "Type":"sap.m.Button",
+    "id" : "idButton",
+    "text":"Button on JSON View",
+    "press":"press"
+}]
+}
