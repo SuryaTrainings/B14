@@ -1,0 +1,8 @@
+<mvc:View controllerName="home.controller.screen1" 
+        xmlns:mvc = "sap.ui.core.mvc"
+        xmlns = "sap.m"
+      >
+
+    <Input id="idInput" placeholder="Enter a value / name "></Input>
+    <Button text="Populate input field info" press=".onPress"></Button>
+</mvc:View>
