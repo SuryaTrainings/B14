@@ -1,0 +1,34 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"   xmlns:layout="sap.ui.layout" 
+            controllerName="home.controller.screen1" 
+            xmlns:mvc = "sap.ui.core.mvc"
+            xmlns = "sap.m"
+      >
+        <!-- <form:SimpleForm title="Employee data"> -->
+        <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title icon="sap-icon://customer" text="Employee details"></core:Title>
+            </form:title>
+
+            <form:content>
+                <Label labelFor="idEmpName" text="Employee name"></Label>
+                <Input id="idEmpName" placeholder="Employee name" value="{/empData/empName}"></Input>
+
+                
+                <Label labelFor="idEmpId" text="Employee Id"></Label>
+                <Input id="idEmpId" placeholder="Employee ID" value="{path: '/empData/empId' }"></Input>
+
+                
+                <Label labelFor="idEmpSal" text="Employee salary"></Label>
+                <Input id="idEmpSal" placeholder="Employee salary" ></Input>
+
+                
+                <Label labelFor="idEmpCurr" text="Currency"></Label>
+                <Input id="idEmpCurr" placeholder="Currency" ></Input>
+
+                <Button text="Display data" id="idBut1" press=".onBtn1Press" type="Emphasized"></Button>
+
+            </form:content>
+
+        </form:SimpleForm>
+        
+</mvc:View>

@@ -1,0 +1,43 @@
+<mvc:View   xmlns:layout="sap.ui.layout" 
+            controllerName="home.controller.screen1" 
+            xmlns:mvc = "sap.ui.core.mvc"
+            xmlns = "sap.m"
+      >
+
+    <layout:Grid  hSpacing="1" vSpacing="1">
+        <layout:content>
+            <Label labelFor="idFirstName" text="First Name">
+                <layoutData>
+                    <layout:GridData span="XL4 L4 M6 S12"></layout:GridData>
+                </layoutData>
+            </Label>
+            <Input id="idFirstName" placeholder="First name" width="100%">
+                <layoutData>
+                    <layout:GridData span="XL4 L4 M6 S12"></layout:GridData>
+                </layoutData>
+            </Input>
+            
+            <Label labelFor="idLastName" text="Last Name">
+                <layoutData>
+                    <layout:GridData span="XL4 L4 M6 S12"></layout:GridData>
+                </layoutData>
+            </Label>
+            <Input id="idLastName" placeholder="Last name" width="100%">
+                <layoutData>
+                    <layout:GridData span="XL4 L4 M6 S12"></layout:GridData>
+                </layoutData>
+            </Input>
+
+            <Button text="Save data" width="100%">
+                <layoutData>
+                    <layout:GridData span="XL8 L8 M12 S12"></layout:GridData>
+                </layoutData>            
+            </Button>
+
+        </layout:content>
+    </layout:Grid>
+
+
+
+
+</mvc:View>

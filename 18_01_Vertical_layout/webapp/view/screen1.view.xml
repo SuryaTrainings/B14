@@ -1,0 +1,18 @@
+<mvc:View xmlns:layout="sap.ui.layout" controllerName="home.controller.screen1" 
+        xmlns:mvc = "sap.ui.core.mvc"
+        xmlns = "sap.m"
+      >
+
+    <layout:VerticalLayout >
+    <Input id="idInput1" placeholder="Enter a value / name "></Input>
+    <Input id="idInput2" placeholder="Enter a value / name "></Input>
+    <Input id="idInput3" placeholder="Enter a value / name "></Input>
+    <Input id="idInput4" placeholder="Enter a value / name "></Input>
+    <Button text="Populate input field info" press=".onPress"></Button>
+    <Button text="Populate input field info" press=".onPress"></Button>
+    
+    
+    </layout:VerticalLayout>
+
+
+</mvc:View>
