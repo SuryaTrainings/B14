@@ -1,0 +1,51 @@
+{
+    "empData" : {
+        "empId" : "0001",
+        "empName" : "SURYA",
+        "empSal" : "20000",
+        "empCur" : "INR"
+    },
+
+    "empRecords": [
+        {   "empId"     : "5001",
+            "empName"   : "Mr A",
+            "empSal"    : "10000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5002",
+            "empName"   : "Mr B",
+            "empSal"    : "11000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5003",
+            "empName"   : "Mr C",
+            "empSal"    : "12000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5004",
+            "empName"   : "Mr D",
+            "empSal"    : "13000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5005",
+            "empName"   : "Mr E",
+            "empSal"    : "14000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5006",
+            "empName"   : "Mr F",
+            "empSal"    : "15000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5007",
+            "empName"   : "Mr G",
+            "empSal"    : "18000",
+            "empCur"    : "INR"
+        },
+        {   "empId"     : "5008",
+            "empName"   : "Mr H",
+            "empSal"    : "19000",
+            "empCur"    : "INR"
+        }         
+    ]
+}

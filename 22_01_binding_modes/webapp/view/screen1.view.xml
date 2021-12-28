@@ -1,0 +1,88 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"   xmlns:layout="sap.ui.layout" 
+            controllerName="home.controller.screen1" 
+            xmlns:mvc = "sap.ui.core.mvc"
+            xmlns = "sap.m"
+      >
+        <!-- <form:SimpleForm title="Employee data"> -->
+        <!-- Defualt model -->
+        <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title icon="sap-icon://customer" text="Employee details - 1"></core:Title>
+            </form:title>
+
+            <form:content>
+                <Label labelFor="idEmpName" text="Employee name"></Label>
+                <Input id="idEmpName" placeholder="Employee name" value="{/empData/empName}"></Input>
+
+                
+                <Label labelFor="idEmpId" text="Employee Id"></Label>
+                <Input id="idEmpId" placeholder="Employee ID" value="{path: '/empData/empId'}"></Input>
+
+                
+                <Label labelFor="idEmpSal" text="Employee salary"></Label>
+                <Input id="idEmpSal" placeholder="Employee salary" value="{path: '/empData/empSal'}"></Input>
+
+                
+                <Label labelFor="idEmpCurr" text="Currency"></Label>
+                <Input id="idEmpCurr" placeholder="Currency" value="{path: '/empData/empCur'}"></Input>
+
+                <Button text="Display data" id="idBut1" press=".onBtn1Press" type="Emphasized"></Button>
+
+            </form:content>
+
+        </form:SimpleForm>
+        <!-- Named model 2 -->
+        <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title icon="sap-icon://customer" text="Employee details - 2"></core:Title>
+            </form:title>
+
+            <form:content>
+                <Label labelFor="idEmpName" text="Employee name"></Label>
+                <Input id="idEmpName2" placeholder="Employee name" value="{person2>/empData/empName}"></Input>
+
+                
+                <Label labelFor="idEmpId" text="Employee Id"></Label>
+                <Input id="idEmpId2" placeholder="Employee ID" value="{path: 'person2>/empData/empId' }"></Input>
+
+                
+                <Label labelFor="idEmpSal" text="Employee salary"></Label>
+                <Input id="idEmpSal2" placeholder="Employee salary" value="{path: 'person2>/empData/empSal'}" ></Input>
+
+                
+                <Label labelFor="idEmpCurr" text="Currency"></Label>
+                <Input id="idEmpCurr2" placeholder="Currency" value="{path: 'person2>/empData/empCur'}"></Input>
+
+                <Button text="Display data" id="idBut12" press=".onBtn1Press" type="Emphasized"></Button>
+
+            </form:content>
+
+        </form:SimpleForm>
+        <!--Named model 3  -->
+        <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title icon="sap-icon://customer" text="Employee details - 3"></core:Title>
+            </form:title>
+
+            <form:content>
+                <Label labelFor="idEmpName" text="Employee name"></Label>
+                <Input id="idEmpName3" placeholder="Employee name" value="{person3>/empData/empName}"></Input>
+
+                <!-- {namedmodel>path} -->
+                <Label labelFor="idEmpId" text="Employee Id"></Label>
+                <Input id="idEmpId3" placeholder="Employee ID" value="{path: 'person3>/empData/empId' }"></Input>
+
+                
+                <Label labelFor="idEmpSal" text="Employee salary"></Label>
+                <Input id="idEmpSal3" placeholder="Employee salary" value="{path: 'person3>/empData/empSal'}"></Input>
+
+                
+                <Label labelFor="idEmpCurr" text="Currency"></Label>
+                <Input id="idEmpCurr3" placeholder="Currency" value="{path: 'person3>/empData/empCur'}"></Input>
+
+                <Button text="Display data" id="idBut13" press=".onBtn1Press" type="Emphasized"></Button>
+
+            </form:content>
+
+        </form:SimpleForm>
+</mvc:View>

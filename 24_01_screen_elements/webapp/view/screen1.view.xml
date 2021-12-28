@@ -1,0 +1,131 @@
+<mvc:View xmlns:table="sap.ui.table"
+          xmlns:core="sap.ui.core" 
+          xmlns:form="sap.ui.layout.form"   
+          xmlns:layout="sap.ui.layout" 
+            controllerName="home.controller.screen1" 
+            xmlns:mvc = "sap.ui.core.mvc"
+            xmlns = "sap.m"
+      >
+        <!-- <form:SimpleForm title="Employee data"> -->
+        <!-- Defualt model -->
+
+        <table:Table rows="{/empRecords}" alternateRowColors="true" visibleRowCount="5" selectionMode="Single" rowHeight="45%">
+            <table:columns>
+                <table:Column>
+                    <table:label>
+                        <Label text="Emp ID"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text text="{empId}"></Text>
+                    </table:template>
+                </table:Column>
+
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="Emp Name"></Label>
+                    </table:label>
+                    <table:template>
+                        <Input value="{empName}"></Input>
+                    </table:template>
+                </table:Column>
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="Emp Salary"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text text="{empCur} {empSal} "></Text>
+                    </table:template>
+                </table:Column>
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="Currency"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text text="{empCur}"></Text>
+                    </table:template>
+                </table:Column>
+
+
+                <table:Column>
+                    <table:label>
+                        <Label text="Performance"></Label>
+                    </table:label>
+                    <table:template>
+                        <RatingIndicator value="{rating}"></RatingIndicator>
+                    </table:template>
+                </table:Column>
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="Gender"></Label>
+                    </table:label>
+                    <table:template>
+                        <Image src="{icon}" width="50px" height="50px"></Image>
+                    </table:template>
+                </table:Column>
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="Marriage Status"></Label>
+                    </table:label>
+                    <table:template>
+                        <Select selectedKey="{mStatus}" editable="true">
+                            <items>
+                                <core:Item text="Married" key="M"></core:Item>
+                                <core:Item text="Single" key="S"></core:Item>
+                                <core:Item text="Others" key="O"></core:Item>
+                            </items>
+                        </Select>
+                    </table:template>
+                </table:Column>
+
+                
+                <table:Column>
+                    <table:label>
+                        <Label text="smoker"></Label>
+                    </table:label>
+                    <table:template>
+                        <CheckBox selected="{smoker}" editable="false"></CheckBox>
+                    </table:template>
+                </table:Column>
+
+                
+            </table:columns>
+        </table:Table>
+        <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title icon="sap-icon://customer" text="Employee details - 1"></core:Title>
+            </form:title>
+
+            <form:content>
+                <Label labelFor="idEmpName" text="Employee name"></Label>
+                <Input id="idEmpName" placeholder="Employee name" value="{/empData/empName}"
+                     ></Input>
+
+                
+                <Label labelFor="idEmpId" text="Employee Id"></Label>
+                <Input id="idEmpId" placeholder="Employee ID" value="{path: '/empData/empId'}"></Input>
+
+                
+                <Label labelFor="idEmpSal" text="Employee salary"></Label>
+                <Input id="idEmpSal" placeholder="Employee salary" value="{path: '/empData/empSal'}"
+                 editable ="{= ${/empData/empSal/} > 9000 ? false : true }" ></Input>
+
+                
+                <Label labelFor="idEmpCurr" text="Currency"></Label>
+                <Input id="idEmpCurr" placeholder="Currency" value="{path: '/empData/empCur'}"></Input>
+ 
+                <Button text="Display data" id="idBut1" press=".onBtn1Press" type="Emphasized"></Button>
+
+            </form:content>
+        </form:SimpleForm>
+
+</mvc:View>
