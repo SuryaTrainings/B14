@@ -1,4 +1,3 @@
-# UI5_DEMO_01
 # Welcome to SURYA Trainings
 # We are offering 
 # SAP UI5 FIORI OData, 
