@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <!-- Bootstrap area -->
+        <!-- inline code -->
+        <script
+                id="sap-ui-body"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_fiori_3_dark"
+                data-sap-ui-compatVersion="edge"                
+                data-sap-ui-resourceRoots='{"home": "./"}'
+        ></script>
+
+
+        <!-- Application Area -->
+        <script>
+        //    var oJsView = new sap.ui.view({
+        //         viewName : "home.view.screen1",
+        //         type: "XML",
+        //         id: "idJsView"
+        //    });
+
+        //    oJsView.placeAt("idDiv1");
+
+        // ( b + c ).then(function(a){
+        //     a.display
+        // }) 
+        sap.ui.require(["sap/ui/core/mvc/View"],function(View){
+            View.create({
+                id: "idXML",
+                viewName: "home.view.screen1",
+                type: sap.ui.core.mvc.ViewType.XML, 
+            }).then(function(oView){
+                oView.placeAt("content");
+            })
+        });              
+
+        </script>        
+    </head>
+    <body id="content" class="sapUiBody">
+        <!-- UI Area - We are not going to write any html code -->
+    <div id="idDiv1"></div>
+    <div id="idDiv2"></div>
+    </body>
+</html>
