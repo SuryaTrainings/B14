@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc" 
+      xmlns = "sap.m"
+      controllerName="home.controller.screen2">
+
+<Button text="Go back Screen1" icon="sap-icon://arrow-left"
+    press="onBack"></Button>
+
+</mvc:View>      

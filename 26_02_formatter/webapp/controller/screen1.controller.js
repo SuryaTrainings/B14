@@ -1,7 +1,8 @@
 sap.ui.define([
     'sap/ui/core/mvc/Controller',
-    'home/model/models'
-], function (Controller, oModels) {
+    'home/model/models',
+    'home/util/cosmatics'
+], function (Controller, oModels, oCosmatics) {
     return Controller.extend("home.controller.screen1", {
         onInit: function () {
 
@@ -70,9 +71,10 @@ sap.ui.define([
             //Step - 4
             oForm.bindElement(sPath);
         },
-        toUpperCase: function(empName){
-             return empName.toUpperCase();
-        }
+
+        oConversions :  oCosmatics,        
+
+
     });
 
 });

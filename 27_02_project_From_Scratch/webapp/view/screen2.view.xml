@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc" 
+      xmlns = "sap.m"
+      controllerName="home.controller.screen2">
+
+<Page>
+
+    <Text text="Screen2"></Text>
+
+</Page>
+
+</mvc:View>      

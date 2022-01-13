@@ -33,7 +33,7 @@
                         <Label text="Emp Name"></Label>
                     </table:label>
                     <table:template>
-                        <Input value="{ path : 'empName', formatter: '.toUpperCase' }"></Input>
+                        <Input value="{ path : 'empName', formatter: '.oConversions.toUpperCase' }"></Input>
                     </table:template>
                 </table:Column>
 
@@ -43,7 +43,10 @@
                         <Label text="Emp Salary"></Label>
                     </table:label>
                     <table:template>
-                        <Text text="{empCur} {empSal} "></Text>
+                        <Text text="{ parts: [{path: 'empSal'}, 
+                                            {path: 'empCur'}],
+                                    formatter: '.oConversions.changeCurrency'        
+                                            }"></Text>
                     </table:template>
                 </table:Column>
 
