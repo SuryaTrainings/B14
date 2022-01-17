@@ -1,0 +1,54 @@
+{
+    "_version": "1.9.0",
+    "sap.app": {
+        "id":"st.sales.report.salesreport",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{compTitle}}",
+        "description": "{{compDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui":{
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://home",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet":"",
+            "tablet@2": ""
+        },
+        "deviceTypes":{
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize",
+            "sap_fiori_3_dark",
+            "sap_fiori_3"            
+        ]   
+
+    },
+    "sap.ui5":{
+        "dependencies": {
+            "minUI5Version": "1.96.0",
+            "libs": {
+                "sap.m":{}
+            }            
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n":{
+                "type":"sap.ui.model.resource.ResourceModel",
+                "uri":"i18n/i18n.properties"                
+            }
+        }      
+    }
+}

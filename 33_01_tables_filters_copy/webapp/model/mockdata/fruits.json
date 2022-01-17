@@ -1,0 +1,35 @@
+{
+    "fruits":[
+        {
+            "name"  : "Grapes",
+            "color" : "Purple",
+            "taste" : "Alkaline",
+            "size"  : "small",
+            "price" : 55,
+            "curr"  : "INR",
+            "healthBenfit" : "high in antioxidents, may prevent chronic diseases",
+            "season"    :   "summer",
+            "image" : "https://thumbs.dreamstime.com/z/blue-grapes-dry-bunch-white-background-as-package-design-element-45379789.jpg"
+        },
+        {   "name"  : "Mango",
+            "color" : "Yellow",
+            "taste" : "Sweet",
+            "size"  : "Mediem",
+            "price" : 70,
+            "curr"  : "INR",
+            "healthBenfit" : "Low in calories",
+            "season"    :   "summer",
+            "image" : "https://thumbs.dreamstime.com/b/mango-ripe-white-background-35283521.jpg"
+        },
+        {   "name"  : "Watermelon",
+            "color" : "Green",
+            "taste" : "Sweet",
+            "size"  : "Large",
+            "price" : 120,
+            "curr"  : "INR",
+            "healthBenfit" : "Packed with nutrients and beneficial plant compounds",
+            "season"    :   "summer",
+            "image" : "https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg"
+        }
+    ]
+}

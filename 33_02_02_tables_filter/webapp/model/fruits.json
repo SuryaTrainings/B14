@@ -1,0 +1,48 @@
+{
+    "fruits": [
+        {
+            "name": "Black Grapes",
+            "color": "Purple",
+            "taste":"Alkaline",
+            "size":"small",
+            "price":10,
+            "curr":"INR",
+            "healthBenfit":"Rich in Antioxidants",
+            "season":"Winter",
+            "image":"https://image.shutterstock.com/image-photo/dark-blue-grape-leaves-isolated-600w-604667837.jpg"
+        }, 
+        {
+            "name": "Mango",
+            "color": "Yellow",
+            "taste":"Sweet",
+            "size":"Mediem",
+            "price":40,
+            "curr":"INR",
+            "healthBenfit":"Packed with nutrients.",
+            "season":"Summer",
+            "image":"https://image.shutterstock.com/image-photo/mango-fruit-leaf-isolated-on-260nw-1893493072.jpg"
+        }, 
+        {    "name": "Watermelon",
+            "color": "Green",
+            "taste":"Sweet",
+            "size":"Large",
+            "price":80,
+            "curr":"INR",
+            "healthBenfit":"Helps you stay hydrated",
+            "season":"Summer",
+            "image":"https://image.shutterstock.com/image-photo/whole-half-watermelon-isolated-on-600w-1422071948.jpg"
+        },
+                {
+            "name": "Blue Grapes",
+            "color": "Green",
+            "taste":"Sweet and sour",
+            "size":"small",
+            "price":60,
+            "curr":"INR",
+            "healthBenfit":"Lower Blood Pressure",
+            "season":"Winter and summer",
+            "image":"https://image.shutterstock.com/image-photo/shine-muscat-grape-isolated-on-600w-1824328559.jpg"
+        }
+    
+    ]
+}

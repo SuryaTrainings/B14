@@ -1,0 +1,67 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc = "sap.ui.core.mvc" 
+      xmlns = "sap.m"
+      controllerName="st.sales.report.salesreport.controller.screen1">
+
+<Page title="Screen 1 / Page 1 / View 1">
+
+    <headerContent>
+    <Button 
+            icon="sap-icon://action"
+            press=".onNext"></Button>
+    </headerContent>
+
+    <!-- text="Go to screen1" -->
+
+<content>
+    <SearchField  id="idSF"></SearchField>
+    <List id="idList">
+        <items>
+            <!-- Display list item -->
+            <DisplayListItem value="A natural antibiotic" label="Apple" />
+            <DisplayListItem value="A immunity booster for sports persons" label="Boost" />
+
+            <!-- Standard list item -->
+            <StandardListItem title="Footbal" description="World's favortie game" icon="sap-icon://soccer"/>
+
+            <!-- Input list item -->
+            <InputListItem label="Dell">
+                <HBox >
+                <Input ></Input>
+                </HBox>            
+            </InputListItem>
+            
+            <InputListItem label="Touch laptops">
+                <Switch ></Switch>            
+            </InputListItem>
+
+            <CustomListItem>
+                <Label text="Cars">
+                    
+                </Label>
+                <Switch/>
+            </CustomListItem>
+
+            <ObjectListItem title="cars" intro="All types of cars avaliable" icon="sap-icon://car-rental"
+                number="670" numberUnit="unit - 1 unit - 1 car"
+            >
+                <attributes>
+                    <ObjectAttribute text="SVU Cars" title="Maruthi"></ObjectAttribute>
+                    
+                    <ObjectAttribute text="27000 per month " title="XL6 Version"></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus text="Avaliable" state="Error"></ObjectStatus>
+                </firstStatus>
+            </ObjectListItem>
+
+            <FeedListItem icon="https://aipris.org/aiprislogo2000.png" sender="Shri Vajpayee" text="do good, get good"
+                timestamp="11Jan2022 - 21:22:22"
+            ></FeedListItem>
+
+            <ActionListItem press="onNext" text="Order Now!!"></ActionListItem>
+        </items>    
+    </List>
+</content>
+            
+</Page>
+</mvc:View>      
